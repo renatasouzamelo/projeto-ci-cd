@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: 
       name: dev
-      url: 'google.com'
+      url: 'www.google.com'
     needs: build
     steps:
       - name: Run a one-line script
@@ -24,7 +24,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: 
       name: hlg
-      url: 'google.com'
+      url: 'www.google.com'
     needs: deploy-dev
     steps:
       - name: Run a one-line script
@@ -35,7 +35,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: 
       name: prd
-      url: 'google.com'
+      url: 'www.google.com'
     needs: deploy-hlg
     steps:
       - name: Run a one-line script
